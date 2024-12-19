@@ -1,2 +1,2 @@
-# Election-Prediction-Modeling
-A data science approach to modeling presidential elections
+# NYC Home Price Predictor
+Kaushik Sriram (December 2024)
