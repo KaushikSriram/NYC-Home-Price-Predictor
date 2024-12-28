@@ -7,11 +7,12 @@ from sklearn.metrics import mean_squared_error, r2_score
 import matplotlib.pyplot as plt
 
 # Reading CSVs with borough sales data as Pandas dataframes
-manhattan_df = pd.read_csv('/content/rollingsales_manhattan_final(Manhattan).csv', header=0)
-bronx_df = pd.read_csv('/content/rollingsales_bronx_final(Bronx).csv', header=0)
-brooklyn_df = pd.read_csv('/content/rollingsales_brooklyn_final(Brooklyn).csv', header=0)
-queens_df = pd.read_csv('/content/rollingsales_queens_final(Queens).csv', header=0)
-statenisland_df = pd.read_csv('/content/rollingsales_statenisland_final(Staten Island).csv', header=0)
+manhattan_df = pd.read_csv('https://raw.githubusercontent.com/KaushikSriram/NYC-Home-Price-Predictor/main/rollingsales_manhattan_final(Manhattan).csv', header=0)
+bronx_df = pd.read_csv('https://raw.githubusercontent.com/KaushikSriram/NYC-Home-Price-Predictor/main/rollingsales_bronx_final(Bronx).csv', header=0)
+brooklyn_df = pd.read_csv('https://raw.githubusercontent.com/KaushikSriram/NYC-Home-Price-Predictor/main/rollingsales_brooklyn_final(Brooklyn).csv', header=0)
+queens_df = pd.read_csv('https://raw.githubusercontent.com/KaushikSriram/NYC-Home-Price-Predictor/main/rollingsales_queens_final(Queens).csv', header=0)
+statenisland_df = pd.read_csv('https://raw.githubusercontent.com/KaushikSriram/NYC-Home-Price-Predictor/main/rollingsales_statenisland_final(Staten%20Island).csv', header=0)
+
 
 # Combine all borough data
 nyc_df = pd.concat([manhattan_df, bronx_df, brooklyn_df, queens_df, statenisland_df], ignore_index=True)
